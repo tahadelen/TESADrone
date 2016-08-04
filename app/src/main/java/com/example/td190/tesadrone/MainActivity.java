@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity{
                 if (menuItem.getItemId() == R.id.settings_id) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.containerView,new SettingsFragment()).commit();
-
                 }
 
                 if (menuItem.getItemId() == R.id.main_menu_id) {
@@ -75,6 +74,7 @@ public class MainActivity extends AppCompatActivity{
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         mDrawerToggle.syncState();
+
 
     }
 }
